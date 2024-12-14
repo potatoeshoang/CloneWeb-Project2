@@ -1,0 +1,80 @@
+extends ../layouts/default.pug
+include ../mixins/breadcrumb.pug
+
+
+
+block title 
+    title Danh sách sản phẩm
+block main 
+    //- product-info
+    .product-info
+        .container 
+            .product-info__wrap    
+                .product-info__left 
+                    .product-info__image-main 
+                        img(src="assets/images/shiba1.jpg", alt="")
+                    .product-info__image-sub
+                        img(src="assets/images/shiba1.jpg", alt="")
+                        img(src="assets/images/shiba2.jpg", alt="")
+                        img(src="assets/images/shiba3.jpg", alt="")
+                        img(src="assets/images/shiba4.jpg", alt="")
+                        img(src="assets/images/shiba5.jpg", alt="")
+                .product-info__right
+                    -
+                        var breadcrumb_li = [
+                            {
+                                link: "#",
+                                title: "Trang chủ"
+                            },
+                            {
+                                link: "#",
+                                title: "Chó"
+                            },
+                            {
+                                link: "#",
+                                title: "Chó con"
+                            },
+                            {
+                                link: "#",
+                                title: "Shina Uni Màu Nâu Đỏ"
+                            }
+                        ]
+                    +breadcrumb2(breadcrumb_li)
+                    h1.product-info__title Shiba Inu Màu Nâu Đỏ
+                    .product-info__price 12.000.000 VND
+                    .product-info__buttons 
+                        a(href="#" class="button") Liên hệ
+                        a(href="#" class="button--outline") <i class="fa-regular fa-comment-dots"></i> Chat với Monito
+                         
+                    table.product-info__details
+                        tbody
+                            tr 
+                                td SKU
+                                td #1000078
+                            tr 
+                                td Giống cái
+                                td Cái
+                            tr 
+                                td Tuổi
+                                td 2 tháng
+                            tr 
+                                td Kích thước
+                                td Nhỏ
+                            tr 
+                                td Màu Sắc
+                                td Nâu đỏ
+                            tr 
+                                td Mô tả ngắn
+                                td Giống thuần chủng Shih Tzu. Cấu trúc cơ thể tốt. Với chứng chỉ MKA và Microchip. Cha từ dòng dõi vô địch.
+                    .product-info__share
+                        .product-info__label <i class="fa-solid fa-share-nodes"></i> Chia sẻ:
+                        nav.product-info__social
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+
+    //- product-info
+    // Section2
+    include ../partials/section2.pug
+    // End section2

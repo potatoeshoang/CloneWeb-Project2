@@ -1,0 +1,16 @@
+mixin breadcrumb(list) 
+  nav.breadcrumb 
+    .container
+      ul.breadcrumb__list
+        each item in list
+          li.breadcrumb__item 
+            a(class="breadcrumb__link" href=item.link) #{item.title}
+            i(class="fa-solid fa-angle-right")
+
+mixin breadcrumb2(list) 
+  nav.breadcrumb 
+    ul.breadcrumb__list
+      each item in list
+        li.breadcrumb__item 
+          a(class="breadcrumb__link" href=item.link) #{item.title}
+          i(class="fa-solid fa-angle-right")

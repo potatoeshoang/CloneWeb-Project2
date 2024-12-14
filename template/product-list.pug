@@ -1,0 +1,218 @@
+extends ../layouts/default.pug
+include ../mixins/breadcrumb.pug
+
+
+
+block title 
+    title Danh sách sản phẩm
+block main 
+    //- Breadcrumb
+    
+    -
+      var breadcrumb_li = [
+        {
+          link: "#",
+          title: "Trang chủ"
+        },
+        {
+          link: "#",
+          title: "Chó"
+        },
+        {
+          link: "#",
+          title: "Chó nhỏ"
+        }
+      ]
+    +breadcrumb(breadcrumb_li)
+    //- End Breadcrumb
+    //- Section3
+    include ../partials/section3.pug
+    //- End section3
+    //- layout product
+    .layout-product 
+        .container 
+            .layout-product__wrap
+                .layout-product__left 
+                    .filter
+                        .filter__title 
+                            img(src="assets/images/Filter.svg", alt="")
+                            span Bộ lọc
+                        .filter__list 
+                            .filter__item
+                                .filter__item-title Giống 
+                                .filter__item-box    
+                                    .filter__item-choice 
+                                        input(type="checkbox" id="gender")
+                                        label(for="gender") Đực
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Cái
+                            .filter__item
+                                .filter__item-title Màu sắc 
+                                .filter__item-box    
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Xám
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Đen
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Trắng
+                            .filter__item
+                                .filter__item-title Kích thước 
+                                .filter__item-box    
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Nhỏ 
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Vừa 
+                                    .filter__item-choice 
+                                        input(type="checkbox")
+                                        label Lớn
+                                    
+                .layout-product__right 
+                    .layout-product__head
+                        h1.layout-product__title Chó Nhỏ
+                        button.layout-product__filter 
+                            img(src="assets/images/Filter.svg", alt="")
+                            |   Bộ lọc
+                    .layout-product__list
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 2.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO502 - Poodle Tiny Vàng
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 3.900.000 VND
+
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 3.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO102 - Poodle Tiny Sepia
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 4.000.000 VND
+
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 4.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 8.900.000 VND
+
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 5.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO231 - Pembroke Corgi
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 7.900.000 VND
+
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 6.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO502 - Pembroke Corgi
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 9.000.000 VND
+
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 7.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO231 - Pomeranian Trắng
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 6.500.000 VND
+
+                        .product-item
+                            .product-item__image
+                                img(
+                                    alt="" 
+                                    src="assets/images/image 8.jpg"
+                                )
+                            .product-item__content
+                                a.product-item__title(href="#") MO512 - Poodle Tiny
+                            .product-item__desc
+                                .product-item__gender
+                                    | Giống:
+                                    b Đực
+                                .product-item__separator
+                                .product-item__age
+                                    | Tuổi:
+                                    b 02 tháng
+                            .product-item__price 5.000.000 VND
+                    nav.layout-product__pagination 
+                        .pagination
+                            button.pagination__button <i class="fa-solid fa-arrow-left"></i>
+                            button.pagination__button.pagination__button--active 1
+                            button.pagination__button 2
+                            button.pagination__button 3
+                            button.pagination__button 4
+                            button.pagination__button.pagination__button--disabled ...
+                            button.pagination__button 28
+                            button.pagination__button <i class="fa-solid fa-arrow-right"></i>
+    //- End layout product
+    

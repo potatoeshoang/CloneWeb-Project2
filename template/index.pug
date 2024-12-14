@@ -1,0 +1,226 @@
+extends ../layouts/default.pug
+include ../mixins/head-title.pug
+block title 
+  title Trang chủ
+
+block main 
+    // Section 1
+    .section1
+      .container
+        .section1__wrap
+          img(src="assets/images/Rectangle 9.svg" alt="" class="section1__bg4")
+          img(src="assets/images/1.svg" class="section1__bg1")
+          .section1__content
+            h2 Thêm Một Bạn
+            h3 Thêm Ngàn Niềm Vui!
+            p Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+            .section1__button
+                a(href="#" class="button button1")
+                  |Giới Thiệu 
+                  i(class="fa-regular fa-circle-play")
+                a(href="#" class="button button2") Khám Phá Ngay
+      
+          img(src="assets/images/2.svg" alt="" class="section1__bg2")
+          .section1__image
+            img(class="section1__bg3" src="assets/images/Group 2.svg" alt="")
+            img(class="section1__main" src="assets/images/lmao.png" alt="good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated") 
+              
+    // End Section1
+    // Section2 
+    .section2
+      .container
+        +head-title("Có gì mới?", "Một số vật nuôi của chúng tôi", "Xem thêm")
+        .section2__wrap
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 1.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO231 - Pomeranian Trắng
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 6.900.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 2.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO502 - Poodle Tiny Vàng
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 3.900.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 3.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO102 - Poodle Tiny Sepia
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 4.000.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 4.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO512 - Alaskan Malamute
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 8.900.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 5.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO231 - Pembroke Corgi
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 7.900.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 6.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO502 - Pembroke Corgi
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 9.000.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 7.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO231 - Pomeranian Trắng
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 6.500.000 VND
+
+          .product-item
+            .product-item__image
+              img(
+                alt="" 
+                src="assets/images/image 8.jpg"
+              )
+            .product-item__content
+              a.product-item__title(href="#") MO512 - Poodle Tiny
+              .product-item__desc
+                .product-item__gender
+                  | Giống:
+                  b Đực
+                .product-item__separator
+                .product-item__age
+                  | Tuổi:
+                  b 02 tháng
+              .product-item__price 5.000.000 VND
+
+        .section2__button-bottom
+          a.button(href="#")
+            | Xem thêm
+            i.fa-solid.fa-chevron-right
+    // End section2
+
+    // Section3
+    include ../partials/section3.pug
+    // End section3
+
+    // Section4
+    .section4
+      .container
+        +head-title("Có gì mới?", "Một số vật nuôi của chúng tôi", "Xem thêm")
+        .section4__wrap
+          .news
+            .news__image 
+              img(src="assets/images/section4_runningdog.png" alt="")
+            .news__content 
+              .news__category 
+                |Kiến thức thú cưng
+              .news__title 
+                |Pomeranian là gì? Cách nhận biết chó Pomeranian
+              .news__desc
+                |Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+          .news
+            .news__image 
+              img(src="assets/images/section4_eatingdog.png" alt="")
+            .news__content 
+              .news__category 
+                |Kiến thức thú cưng
+              .news__title 
+                |Chế độ ăn cho chó bạn cần biết
+              .news__desc
+                |Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+          .news
+            .news__image 
+              img(src="assets/images/section4_naughtydog.png" alt="")
+            .news__content 
+              .news__category 
+                |Kiến thức thú cưng
+              .news__title 
+                |Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+              .news__desc
+                |Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+        .section4__button-bottom
+          a(class="button--outline" href="#") Xem thêm 
+    // End section4
+

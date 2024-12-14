@@ -1,0 +1,9 @@
+mixin head-title(upper_left, lower_left, button_right)
+    .head-title
+        .head-title__title-left
+            .head-title__upper-title #{upper_left}
+            .head-title__lower-title #{lower_left}
+        .head-title__title-right
+            a(href="#")
+                | #{button_right}
+                i.fa-solid.fa-chevron-right

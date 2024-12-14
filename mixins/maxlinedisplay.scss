@@ -1,0 +1,6 @@
+@mixin maxlinedisplay($lines) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}

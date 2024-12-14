@@ -1,0 +1,5 @@
+@mixin colorfwfs($color, $fontweight, $fontsize) {
+    color: $color;
+    font-weight: $fontweight;
+    font-size: $fontsize;
+}
